@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:grey;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align:center;
+    margin-top: 100px;
+    font-size: larger;
+    
+   /* animation: moveText 5s linear infinite; */
+}
+
+#joke-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow:10px 5px 5px teal;
+    font-size: larger;
+    font-variant-east-asian: jis83;
+    color:#0056b3;
+    font-weight: bold;
+    animation: moveText 5s linear infinite;
+     
+    
+}
+
+#joke-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color:green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top:1cm;
+}
+
+#joke-button:hover {
+    background-color: #0056b3;
+}
+
+
+/*.moving-text {
+    font-size: 24px;
+    animation: moveText 5s linear infinite; /* Adjust the animation duration and timing function as needed 
+}
+*/
+
+@keyframes moveText {
+    50% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(200px); /* Adjust the distance to move horizontally */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
